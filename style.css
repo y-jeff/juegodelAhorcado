@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
+body {
+  background: #f4f4f9;
+  font-family: 'Indie Flower', cursive;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.hangman {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  padding: 20px;
+  max-width: 400px;
+  text-align: center;
+  width: 100%;
+}
+
+.caveat-title {
+  font-size: 36px;
+  color: #2d4059;
+  margin-bottom: 10px;
+  font-weight: 700;
+  font-family: 'Indie Flower', cursive;
+}
+
+.caveat-select {
+  padding: 8px;
+  margin: 10px 0 20px;
+  font-size: 18px;
+  border: 1px solid #2d4059;
+  border-radius: 4px;
+  color: #2d4059;
+  font-family: 'Indie Flower', cursive;
+}
+
+.instructions {
+  color: #2d4059;
+  font-size: 18px;
+  margin-bottom: 15px;
+  font-weight: 400;
+  font-family: 'Indie Flower', cursive;
+}
+
+.guessForm {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.guessLetter {
+  font-size: 20px;
+  padding: 10px;
+  flex-grow: 1;
+  border: 1px solid #2d4059;
+  border-radius: 4px;
+  color: #2d4059;
+  text-align: center;
+  font-family: 'Indie Flower', cursive;
+  background-color: #fff;
+  outline: none;
+  font-weight: 400;
+}
+
+.guessButton, .startButton {
+  background: #2d4059;
+  border: none;
+  color: #fff;
+  font-size: 20px;
+  padding: 10px 15px;
+  cursor: pointer;
+  transition: background 0.3s;
+  border-radius: 4px;
+  font-family: 'Indie Flower', cursive;
+  font-weight: 700;
+}
+
+.guessButton:hover, .startButton:hover {
+  background: #1b2a41;
+}
+
+.wrongLettersTitle {
+  font-size: 18px;
+  color: red;
+  margin-bottom: 8px;
+  font-weight: 400;
+  font-family: 'Indie Flower', cursive;
+}
+
+.wrongLetters {
+  font-size: 20px;
+  color: #f76c6c;
+  font-weight: 400;
+  font-family: 'Indie Flower', cursive;
+}
+
+.letter {
+  display: inline-block;
+  font-size: 30px;
+  padding: 5px 10px;
+  border-bottom: 2px solid #2d4059;
+  margin: 0 5px;
+  color: transparent;
+  font-family: 'Indie Flower', cursive;
+}
+
+.caveat-letter {
+  font-family: "Indie Flower", cursive;
+  font-weight: 400; /* Puedes cambiar a 700 según prefieras */
+  font-style: normal;
+  color: #000;
+}
+
+.correct {
+  color: #000; /* Letras correctas en negro */
+}
+
+.message {
+  display: none;
+  padding: 20px;
+  background: #ff9f1c;
+  color: #fff;
+  border-radius: 8px;
+  margin-top: 20px;
+  font-family: 'Indie Flower', cursive;
+}
+
+.title {
+  font-size: 24px;
+  margin-bottom: 10px;
+  font-weight: 700;
+  font-family: 'Indie Flower', cursive;
+}
+
+.text {
+  font-size: 18px;
+  font-weight: 400;
+  font-family: 'Indie Flower', cursive;
+}
+
+.button {
+  margin-top: 15px;
+  background: #ff6b6b;
+  color: white;
+  padding: 10px 20px;
+  font-size: 18px;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  font-family: 'Indie Flower', cursive;
+  font-weight: 700;
+}
+
+.button:hover {
+  background: #ff4e4e;
+}

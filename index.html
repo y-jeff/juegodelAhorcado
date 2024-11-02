@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Juego de Ahorcado</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="hangman">
+  <h1 class="caveat-title">Juego de Ahorcado</h1>
+  <p class="instructions">Selecciona una categoría e intenta adivinar la palabra:</p>
+  
+  <select id="category" class="caveat-select">
+    <option value="animales">Animales</option>
+    <option value="desarrollador">Tecnología</option>
+    <option value="autos">Marcas de Autos</option>
+  </select>
+  
+  <div class="guess"></div>
+  <form class="guessForm">
+    <input type="text" class="guessLetter" maxlength="1" placeholder="Ingresa una letra..." />
+    <button type="button" class="guessButton">Enviar</button>
+  </form>  
+
+  <button class="startButton">Jugar</button>
+  
+  <div class="wrong">
+    <p class="wrongLettersTitle">Letras incorrectas:</p>
+    <div class="wrongLetters"></div>
+  </div>
+  
+  <div class="message">
+    <h2 class="title"></h2>
+    <p class="text"></p>
+    <button class="restart button">¿Jugar de nuevo?</button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
